@@ -1,0 +1,31 @@
+//Prime numbers, made in ruby, iteration 1
+print "Whats the last number you want to test?"
+d = gets.chomp
+a = 1
+e = 0
+print "2 is a prime \n"
+while a < d
+if a % 2 == 0 
+a += 1 end
+p = 1
+b = a / 2 
+for c in 2..b
+if a % c == 0 then p = 0 
+end
+c = c + 1
+end
+if p == 1 
+then 
+print a , " is a prime"
+
+print "\n"
+e = e + 1
+  end
+  a = a + 1
+end
+if e != 1
+print "There are " , e , " Primes between 1 and " , d
+else 
+print "There is " , e , " Prime between 1 and " , d
+end
+print "\n"
